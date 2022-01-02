@@ -166,8 +166,10 @@ body {
 }
 .centerBox {
   position: absolute;
-  width: 800px;
-  height: 520px;
+  width: 80%;
+  height: 75%;
+  left: 10%;
   max-width: 100%;
   bottom: 16%;
+  align-items: center;
 }
