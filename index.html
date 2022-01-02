@@ -10,128 +10,129 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
+<div class="backgroundGIF"></div>
+<div id="div_Name" class="name">
+  <iframe src="animatedName.html" frameborder="0"></iframe>
+</div>
+<div id="div_Home" style="display:block;" class="centerBox">
+  <iframe src="boxCenterHome.html" class="centerBox" frameborder="0" id="div_Home"></iframe>
+</div>
 
-  <div id="div_Name" class="name">
-    <iframe src="animatedName.html" frameborder="0"></iframe>
-  </div>
-  <div id="div_Home" style="display:block;" class="centerBox">
-    <iframe src="boxCenterHome.html" class="centerBox" frameborder="0" id="div_Home"></iframe>
-  </div>
+<div id="div_AboutMe" style="display:none;" class="centerBox">
+  <iframe src="boxCenterAboutMe.html" class="centerBox" frameborder="0"></iframe>
+</div>
 
-  <div id="div_AboutMe" style="display:none;" class="centerBox">
-    <iframe src="boxCenterAboutMe.html" class="centerBox" frameborder="0"></iframe>
-  </div>
+<div id="div_Profile" style="display:none;" class="centerBox">
+  <iframe src="boxCenterProfile.html" class="centerBox" frameborder="0"></iframe>
+</div>
 
-  <div id="div_Profile" style="display:none;" class="centerBox">
-    <iframe src="boxCenterProfile.html" class="centerBox" frameborder="0"></iframe>
-  </div>
+<div id="div_Contact" style="display:none;" class="centerBox">
+  <iframe src="boxCenterContact.html" class="centerBox" frameborder="0"></iframe>
+</div>
 
-  <div id="div_Contact" style="display:none;" class="centerBox">
-    <iframe src="boxCenterContact.html" class="centerBox" frameborder="0"></iframe>
-  </div>
+<div id="div_Projects" style="display:none;" class="centerBox">
+  <iframe src="boxCenterProjects.html" class="centerBox" frameborder="0"></iframe>
+</div>
+<div id="navbar">
+  <nav class="navigation">
+    <ul>
+      <li class="list active">
+        <a href="#" onclick="mostrar_Home()">
+          <span class="icon">
+            <ion-icon name="planet-outline"></ion-icon>
+          </span>
+          <span class="text">Inicio</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="#" onclick="mostrar_AboutMe()">
+          <span class="icon">
+            <ion-icon name="happy-outline"></ion-icon>
+          </span>
+          <span class="text">Sobre Mí</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="#" onclick="mostrar_Profile()">
+          <span class="icon">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </span>
+          <span class="text">Perfil</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="#" onclick="mostrar_Contact()">
+          <span class="icon">
+            <ion-icon name="locate-outline"></ion-icon>
+          </span>
+          <span class="text">Contacto</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="#" onclick="mostrar_Projects()">
+          <span class="icon">
+            <ion-icon name="code-outline"></ion-icon>
+          </span>
+          <span class="text">Proyectos</span>
+        </a>
+      </li>
+      <div class="indicator"></div>
+    </ul>
+  </nav>
+</div>
 
-  <div id="div_Projects" style="display:none;" class="centerBox">
-    <iframe src="boxCenterProjects.html" class="centerBox" frameborder="0"></iframe>
-  </div>
-  <div id="navbar">
-    <nav class="navigation">
-      <ul>
-        <li class="list active">
-          <a href="#" onclick="mostrar_Home()">
-            <span class="icon">
-              <ion-icon name="planet-outline"></ion-icon>
-            </span>
-            <span class="text">Inicio</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href="#" onclick="mostrar_AboutMe()">
-            <span class="icon">
-              <ion-icon name="happy-outline"></ion-icon>
-            </span>
-            <span class="text">Sobre Mí</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href="#" onclick="mostrar_Profile()">
-            <span class="icon">
-              <ion-icon name="person-circle-outline"></ion-icon>
-            </span>
-            <span class="text">Perfil</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href="#" onclick="mostrar_Contact()">
-            <span class="icon">
-              <ion-icon name="locate-outline"></ion-icon>
-            </span>
-            <span class="text">Contacto</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href="#" onclick="mostrar_Projects()">
-            <span class="icon">
-              <ion-icon name="code-outline"></ion-icon>
-            </span>
-            <span class="text">Proyectos</span>
-          </a>
-        </li>
-        <div class="indicator"></div>
-      </ul>
-    </nav>
-  </div>
-  <script>
-    const list = document.querySelectorAll('.list');
-    function activeLink(){
-      list.forEach((item) => 
-      item.classList.remove('active'));
-      this.classList.add('active');
-    }
-    const listChangeCenterBox = document.querySelectorAll('div.centerBox');
-    function activeIFrame(){
-      listChangeCenterBox.forEach((item) => 
-      item.setAttribute("style", 'display:none;'));
-    }
-    function mostrar_AboutMe(){
-      activeIFrame();
-      document.getElementById('div_AboutMe').style.display = "block";
-    }
-    function mostrar_Home(){
-      activeIFrame();
-      document.getElementById('div_Home').style.display = "block";
-    }
-    function mostrar_Profile(){
-      activeIFrame();
-      document.getElementById('div_Profile').style.display = "block";
-    }
-    function mostrar_Contact(){
-      activeIFrame();
-      document.getElementById('div_Contact').style.display = "block";
-    }
-    function mostrar_Projects(){
-      activeIFrame();
-      document.getElementById('div_Projects').style.display = "block";
-    }
-    list.forEach((item) =>
-    item.addEventListener('click', activeLink))
-  </script>
-  <script type="text/javascript">
-    function detectZoomOut(){
-      document.querySelector('#navbar').setAttribute('class', 'showNavBar');
-      document.querySelector('li.list.active').querySelector("a").click();
-    }
-    function detectZoomIn() {
-      document.querySelector('#navbar').setAttribute('class', 'hiddenNavBar');
-      activeIFrame();
-    }
-    window.matchMedia('(max-width: 700px)').addListener(
-      () => detectZoomIn()
-    );
-    window.matchMedia('(max-width: 850px)').addListener(
-      () => detectZoomOut()
-    );
-  </script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+  const list = document.querySelectorAll('.list');
+  function activeLink(){
+    list.forEach((item) => 
+    item.classList.remove('active'));
+    this.classList.add('active');
+  }
+  const listChangeCenterBox = document.querySelectorAll('div.centerBox');
+  function activeIFrame(){
+    listChangeCenterBox.forEach((item) => 
+    item.setAttribute("style", 'display:none;'));
+  }
+  function mostrar_AboutMe(){
+    activeIFrame();
+    document.getElementById('div_AboutMe').style.display = "block";
+  }
+  function mostrar_Home(){
+    activeIFrame();
+    document.getElementById('div_Home').style.display = "block";
+  }
+  function mostrar_Profile(){
+    activeIFrame();
+    document.getElementById('div_Profile').style.display = "block";
+  }
+  function mostrar_Contact(){
+    activeIFrame();
+    document.getElementById('div_Contact').style.display = "block";
+  }
+  function mostrar_Projects(){
+    activeIFrame();
+    document.getElementById('div_Projects').style.display = "block";
+  }
+  list.forEach((item) =>
+  item.addEventListener('click', activeLink))
+</script>
+<script type="text/javascript">
+  function detectZoomOut(){
+    document.querySelector('#navbar').setAttribute('class', 'showNavBar');
+    document.querySelector('li.list.active').querySelector("a").click();
+  }
+  function detectZoomIn() {
+    document.querySelector('#navbar').setAttribute('class', 'hiddenNavBar');
+    activeIFrame();
+  }
+  window.matchMedia('(max-width: 700px)').addListener(
+    () => detectZoomIn()
+  );
+  window.matchMedia('(max-width: 850px)').addListener(
+    () => detectZoomOut()
+  );
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
