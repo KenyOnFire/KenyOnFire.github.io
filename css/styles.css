@@ -9,10 +9,11 @@
 #repeat { background-repeat: repeat; }
 
 div.backgroundGIF {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 110%;
-  top: -5%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
   background: url("https://cdn.dribbble.com/users/71473/screenshots/9569051/media/100aa501e02c36de40348dd1a635866b.gif") center;
   opacity: 0.1;
 }
@@ -40,12 +41,15 @@ body {
   position: relative;
   bottom: -40vh;
   width: 400px;
-  height: 70%;
+  align-content: center;
+  height: 70px;
   background: #fff;
   display: flex;
+  border-left: 10px;
+  border-right: 10px;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .navigation ul {
