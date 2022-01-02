@@ -11,7 +11,8 @@
 div.backgroundGIF {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 110%;
+  top: -5%;
   background: url("https://cdn.dribbble.com/users/71473/screenshots/9569051/media/100aa501e02c36de40348dd1a635866b.gif") center;
   opacity: 0.1;
 }
