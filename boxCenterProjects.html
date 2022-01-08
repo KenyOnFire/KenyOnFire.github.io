@@ -9,6 +9,17 @@
   <body>
     <div>
         <h2>PROYECTOS</h2>
+        <?php
+        if(isset($_POST['submit']))
+        {
+          $output=shell_exec('whoami');
+          echo $output;
+        }
+       ?>
+       
+       <form action="" method="post">
+       <input type="submit" name="submit" value="Call my Shell Script">
+       </form>
     </div>
   </body>
 </html>
