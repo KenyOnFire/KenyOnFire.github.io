@@ -22,4 +22,7 @@ div {
 .scrollstreams {
   overflow-x: auto;
   overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  -moz-box-align: baseline;
 }
