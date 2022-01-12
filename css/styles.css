@@ -34,7 +34,7 @@ body {
 /*//NAVBAR//*/
 
 .foot {
-  margin: 5%;
+  margin: 5px;
 }
 
 .navigation {
@@ -177,7 +177,7 @@ body {
 .name {
   position: absolute;
   text-align: center;
-  top: -4%;
+  top: 0px;
 }
 .centerBox {
   position: absolute;
