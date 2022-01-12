@@ -26,3 +26,7 @@ div {
   justify-content: center;
   -moz-box-align: baseline;
 }
+.scrollstreams iframe {
+  position: absolute;
+  left: 15%;
+}
