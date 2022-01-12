@@ -18,3 +18,8 @@ div {
 .centerTitle {
     height: 90%;
 }
+
+.scrollstreams {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
