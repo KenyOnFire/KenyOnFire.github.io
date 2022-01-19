@@ -26,9 +26,8 @@ h2 {
   color: aliceblue;
 }
 .scrollstreams {
-  overflow-x: block;
+  overflow-x: auto;
   overflow-y: auto;
-  display: list-item;
   border: 0px;
   justify-content: center;
   position: absolute;
